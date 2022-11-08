@@ -1,5 +1,26 @@
+
+body {
+    width: 1600px;
+    font-family: 'Roboto'; 
+    font-style: normal;
+    color: var(--text-main-color)
+}
+
+:root {
+    --logo-white-footer-color: #ffffff;
+    --logo-black-color: #000000;
+    --text-main-color: #212121;
+    --border-header-color: #ECECEC;
+    --hover-blue-color: #2196F3;
+    --logo-blue-color: #2196F3;
+    --link-gray-color: #757575;
+    --hero-back-color: #2F303A;
+    --text-white-color: #F5F4FA;
+    --btn-hero-bg-color: #F5F4FA;
+    --link-footer-color: rgba(255, 255, 255, 0.6);
+}
 .main-header {
-    border-bottom: 1px solid #ECECEC;
+    border-bottom: 1px solid var(--border-header-color);
 }
 .navigation {}
 .logo {
@@ -7,27 +28,28 @@
     font-weight: 700;
     font-size: 26px;
     line-height: 1.3;
-    color: black;
+    color: var(--logo-black-color);
 }
 .logo-blue {
-    color: #2196F3;
+    color: var(--logo-blue-color);
 }
 .navigation-list {}
 .navigation-item {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
+    color: var(--text-main-color);
 }
 .navigation-item:hover,
 .navigation-item:focus,
 .navigation-item:active { 
     letter-spacing: 0.02em;
-    color: #2196F3;
+    color: var(--hover-blue-color);
 }
 .contact-list {}
 .contact-item {}
 .contact-item-link {
-    color: #757575;
+    color: var(--link-gray-color);
     text-decoration: none;
     font-weight: 500;
     font-size: 14px;
@@ -39,13 +61,13 @@
 .link-footer:focus,
 .contact-item-link:active,
 .link-footer:active {
-    color: #2196F3;
+    color: var(--hover-blue-color);
     letter-spacing: 0.02em;
 }
 /* MAIN AND HERO */
 .main-content {}
 .hero {
-    background-color: #2F303A;
+    background-color: var(--hero-back-color);
     width: 1600px;
     height: 600px;
 }
@@ -57,10 +79,10 @@
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: var(--text-white-color);
 }
 .hero-btn {
-    background-color: #F5F4FA;
+    background-color: var(--btn-hero-bg-color);
     text-align: center;
     border-radius: 4px;
     width: 216px;
@@ -77,7 +99,7 @@
 .hero-btn:active {
     cursor: pointer;
     background-color: #2196F3;
-    color: #FFFFFF;
+    color: var(--text-white-color);
     letter-spacing: 0.06em;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
@@ -96,7 +118,7 @@
 .feateres-text {
     font-size: 14px;
     line-height: 1.71;
-    color: #757575;
+    color: var(--link-gray-color);
 }
 /* WORK */
 .what-we-do {}
@@ -112,7 +134,7 @@
 .what-we-do-image {}
 /* PEOPLE LIST */
 .team { 
-    background-color: #F5F4FA;
+    background-color: var(--btn-hero-bg-color);
 }
 .people-head {
     font-weight: 700;
@@ -136,29 +158,29 @@
     line-height: 1.18;
     text-align: center;
     letter-spacing: 0.03em;
-    color: #757575;
+    color: var(--link-gray-color);
 }
 /* FOOTER */
 .footer {
-    background-color: #2F303A;  
+    background-color: var(--hero-back-color);  
 }
 .address-footer {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: #FFFFFF;
+    color: var(--text-white-color);
 }
 .link-footer {
     letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
+    color: var(--link-footer-color);
 }
 .logo-footer {
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
     line-height: 1.3;
-    color: #FFFFFF;
+    color: var(--logo-white-footer-color);
 }
 /* PORTFOLIIO TWO PAGES */
 .content-portfolio {}
@@ -175,13 +197,14 @@
     font-size: 16px;
     line-height: 1.625;
     text-align: center;
-    background-color: #F5F4FA;
+    background-color: var(--btn-hero-bg-color);
 }
 .portfolio-nav-btn:hover, 
 .portfolio-nav-btn:focus,
 .portfolio-nav-btn:active {
     cursor: pointer;
-    background: #2196F3;
+    color: var(--logo-white-footer-color);
+    background: var(--hover-blue-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
 }
@@ -203,7 +226,7 @@
     font-size: 16px;
     line-height: 1.875;
     letter-spacing: 0.03em;
-    color: #757575;
+    color: var(--link-gray-color);
 }
 
 
